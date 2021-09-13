@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+#basic-navbar-nav > div > a:hover{
+  background: #004aad;
+  color: #fff;
+}
