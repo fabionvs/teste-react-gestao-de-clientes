@@ -6,9 +6,6 @@ import {useHistory, Redirect} from "react-router-dom";
 
 
 function Header() {
-    const logout = (props: any) => {
-        authService.logout();
-    }
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -17,6 +14,7 @@ function Header() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">Gerência de Clientes</Nav.Link>
+                        <Nav.Link href="/cadastro">Cadastrar Cliente</Nav.Link>
                         {authService.getToken() == null ?
                             <Nav.Link href="/login">Efetuar Login</Nav.Link>
                             :

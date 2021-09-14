@@ -17,6 +17,7 @@ import Login from "./views/Login";
 
 import authService from "./services/auth.service";
 import Logout from "./views/Logout";
+import CreateCliente from "./views/CreateCliente";
 
 const PrivateRoute = (props : any) => {
     const location = useLocation();
@@ -37,6 +38,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <PrivateRoute path="/" exact={true} component={App}/>
+            <PrivateRoute path="/cadastro" exact={true} component={CreateCliente}/>
             <Route path="/login" component={Login}/>
             <Route path="/logout" component={Logout}/>
         </Switch>

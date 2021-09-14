@@ -22,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,6 +35,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\var\www\html\react-crud-clientes\src\services" />
       <recent name="\\wsl$\Ubuntu\var\www\html\react-crud-clientes\src\views" />
       <recent name="\\wsl$\Ubuntu\var\www\html\react-crud-clientes\src\components" />
     </key>
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631546822724</updated>
       <workItem from="1631546830074" duration="457000" />
-      <workItem from="1631547352280" duration="13037000" />
+      <workItem from="1631547352280" duration="41059000" />
     </task>
     <servers />
   </component>

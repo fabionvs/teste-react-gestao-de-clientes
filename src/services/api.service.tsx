@@ -8,7 +8,7 @@ const apiService = axios.create({
 apiService.interceptors.request.use(async config => {
     const token = authService.getToken();
     if (token) {
-        config.headers.Authorization = `Bearer ${token}`;
+        config.headers.Authorization = `Bearer ${token.token}`;
     }
     return config;
 });
