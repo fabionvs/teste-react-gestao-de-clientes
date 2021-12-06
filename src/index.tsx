@@ -18,27 +18,30 @@ import Login from "./views/Login";
 import authService from "./services/auth.service";
 import Logout from "./views/Logout";
 import CreateCliente from "./views/CreateCliente";
+import Teste from "./views/Teste";
+import CadastroCliente from "./views/CadastroCliente";
 
-const PrivateRoute = (props : any) => {
-    const location = useLocation();
-    const authLogin  = authService.getToken();
-    return authLogin ? (
-        <Route {...props} />
-    ) : (
-        <Redirect
-            to={{
-                pathname: "/login",
-                state: { from: location }
-            }}
-        />
-    );
-};
+// const PrivateRoute = (props : any) => {
+//     const location = useLocation();
+//     const authLogin  = authService.getToken();
+//     return authLogin ? (
+//         <Route {...props} />
+//     ) : (
+//         <Redirect
+//             to={{
+//                 pathname: "/login",
+//                 state: { from: location }
+//             }}
+//         />
+//     );
+// };
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <PrivateRoute path="/" exact={true} component={App}/>
-            <PrivateRoute path="/cadastro" exact={true} component={CreateCliente}/>
+            <Route path="/" exact={true} component={App}/>
+            <Route path="/cliente/list" exact={true} component={CadastroCliente}/>
+            <Route path="/cliente/create" exact={true} component={CreateCliente}/>
             <Route path="/login" component={Login}/>
             <Route path="/logout" component={Logout}/>
         </Switch>

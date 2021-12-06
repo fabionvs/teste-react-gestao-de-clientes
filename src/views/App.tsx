@@ -45,7 +45,6 @@ function App() {
     };
     return (
         <>
-            <Header/>
             <Container>
                 <Row>
                     <div className="col-12 mt-5 mb-2">

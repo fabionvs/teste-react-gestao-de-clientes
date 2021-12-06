@@ -1,5 +1,14 @@
 import apiService from "./api.service";
 
+const createTeste = (username : string, password : string) => {
+    return apiService.post("login", {
+        username,
+        password,
+    }).then((response) => {
+        return response.data;
+    });
+};
+
 const createClient = (nome : string, cpf : string, cep : string, logradouro : string, cidade: string, bairro: string, uf: string, complemento: string, telefones : any, emails: any) => {
     return apiService.post("clientes", {
         nome,
@@ -52,5 +61,6 @@ const buscar = (username : string, password : string) => {
 export default {
     createClient,
     listCliente,
-    excludeCliente
+    excludeCliente,
+    createTeste
 };
